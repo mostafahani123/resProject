@@ -35,7 +35,7 @@ about-us
 
 <div class="video-container">
     <video controls autoplay >
-        <source src="{{'assets/images/h.mp4'}}"  type="video/mp4">
+        <source src="{{'assets/images/Restaurant Ad Video Template (Editable).mp4'}}"  type="video/mp4">
        
     </video>
     <div class="overlay">
@@ -67,14 +67,44 @@ about-us
 
 
 
+{{-- section four  --}}
+<section class="section-four-about">
+    <div class="img-about"><img src="{{asset('assets/images/Mask group (11).png')}}" alt=""></div>
+<div class="up-abput-left">
+    <h2 class="h2-about">A little information<br> for our valuable guest</h2>
+    <p class="p-about">At place, we believe that dining is not just about food, but also about the<br> overall experience. Our staff, renowned for their warmth and dedication<br>, strives to make every visit an unforgettable event.</p>
+   <div class="top-about">
+    <div class="left-about">
+    <h1 class="three-about">3</h1>
+    <p>Locations</p>
+    </div>
+    <div class="right-about">
+     <h1 class="three-about">1995</h1>
+     <p>Founded</p>
+    </div>
+    </div>
+    <div class="bottom-about">
+    <div class="left-about">
+        <h1 class="three-about">65+</h1>
+        <p>Staff Members</p>
+    </div>
+    <div class="ten-about" >
+        <h1>100%</h1>
+        <p>Satisfied Customers</p>
+    </div>
+</div>
+</div>
+</section>
 
+
+{{-- end section four  --}}
 
 
 
 
 
  {{-- section five  --}}
- <section class="section-five">
+ <section class="section-five-about">
     <h2 id="h2">What Our Customers Say</h2>
     <div class="customers">
     <div class="customer-one" id="customer-one">

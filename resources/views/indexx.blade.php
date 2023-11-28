@@ -6,7 +6,7 @@ Home
 
     <div class="sliderup">
             <div class="slider-caption">
-                <h1>Best food for<br>
+                <h1 id="h1-home">Best food for<br>
                     your taste</h1>
                 <p>Discover delectable cuisine and unforgettable moments <br> in our welcoming, culinary haven..</p>
                 <a href="{{url('single-post')}}"  class="left-button">Shop Now</a>
@@ -22,7 +22,7 @@ Home
         <div class="row">
             <div class="col-md-12">
                 <div class="heading-section">
-                    <h2 class="in">Browse Our Menu</h2>
+                    <h2 id="h2-home" class="in">Browse Our Menu</h2>
                 </div>
             </div>
         </div>
@@ -51,7 +51,8 @@ Home
             <div class="col-md-3 col-sm-6">
                 <div class="service-item">
                     <div class="icon">
-                        <i class="fa fa-glass" aria-hidden="true"></i>                    </div>
+                        <i class="fa fa-glass" aria-hidden="true"></i>                 
+                       </div>
                     <h4>Drinks</h4>
                     <p>In the new era of technology we<br> look in the future with certainty<br> and pride for our life.</p>
                     <a href="#">Explore Menu</a>
@@ -78,7 +79,7 @@ Home
  {{-- section three  --}}
 
 <section class="ccontainer">
-    <div class="row">
+    <div class="row" id="section-top">
     <img src="{{asset('assets/images/sectionthree2.JPG')}}">
     <div class="relative-item">
    <h5>Come and visit us</h5>
@@ -89,7 +90,7 @@ Home
     </div>
     </div>
     <div class="right-section" >
-   <h2>We provide healthy<br> food for your family.</h2>
+   <h2 class="h2-res" id="h2-home-section">We provide healthy<br> food for your family.</h2>
 
    <h6>Our story began with a vision to create a unique dining<br> experience that merges fine dining, exceptional service, and a<br> vibrant ambiance. Rooted in city's rich culinary culture, we aim to<br> honor our local roots while infusing a global palate.</h6>
 
@@ -139,7 +140,7 @@ Home
 {{-- /* end section four */ --}}
 {{-- /*  section five */ --}}
 
-<section class="section-five">
+<section class="section-five" id="section-five">
 
     <div class="img-one-left">
         <img src="{{asset('assets/images/left1.jpg')}}" alt="">
@@ -149,9 +150,9 @@ Home
         <img src="{{asset('assets/images/right2.jpg')}}" class="img-bottom">
     </div>
 
-<div class="right-div">
+<div class="right-div" id="right-div">
     <h2>Fastest Food<br> Delivery in City</h2>
-    <p>Our visual designer lets you quickly and of drag a down<br> your way to customapps for both keep desktop. </p>
+    <p id="p-res">Our visual designer lets you quickly and of drag a down<br> your way to customapps for both keep desktop. </p>
     <i class="fa fa-clock-o" aria-hidden="true"> <a href="">Delivery within 30 minutes</a></i>  
     <i class="fa fa-money" aria-hidden="true"> <a href="">Best Offer & Prices</a></i>
     <i class="fa fa-shopping-cart" aria-hidden="true"> <a href="">Online Services Available</a></i>
@@ -161,7 +162,7 @@ Home
 {{-- /*  end section five */ --}}
 {{-- /*   section six */ --}}
 <section class="section-six">
-<h2 id="h2">What Our Customers Say</h2>
+
 <div class="customers">
 <div class="customer-one" id="customer-one">
     <h2>“One of a kind restaurant”</h2>
@@ -170,7 +171,6 @@ Home
     <div class="con-im">
         <img src="{{asset('assets/images/1.jpg')}}">
         <h4>Sophire Robson</h4>
-        <p class="p">Los Angeles, CA</p>
         </div> 
 </div>
 <div class="customer-one" id="customer-two">
@@ -180,7 +180,6 @@ Home
     <div class="con-im">
         <img src="{{asset('assets/images/2.jpg')}}">
         <h4 >Matt Cannon</h4>
-        <p class="p">San Diego, CA</p>
         </div> 
 </div>
 <div class="customer-one" id="customer-three">
@@ -190,7 +189,6 @@ Home
     <div class="con-im">
     <img src="{{asset('assets/images/3.jpg')}}">
     <h4 >Andy Smith</h4>
-    <p class="p">San Francisco, CA</p>
     </div> 
 </div>
 </div>
@@ -204,9 +202,9 @@ Home
 </div>
 <div class="Articles">
 <img src="{{asset('assets/images/perger.jpg')}}" alt="">
-<p>January 3, 2023</p>
-<h6>The secret tips & tricks to prepare a perfect burger & pizza<br> for our customers</h6>
-<p>Lorem ipsum dolor sit amet consectetur of a adipiscing elitilmim semper<br> adipiscing massa gravida nisi cras enim quis nibholm varius amet gravida<br> ut facilisis neque egestas.</p>
+<p class="">January 3, 2023</p>
+<h6>The secret tips & tricks to prepare  perfect burger & pizza<br> for our customers</h6>
+<p class="p-img"> Lorem ipsum dolor sit amet consectetur of a adipiscing elitilmim semper<br> adipiscing massa gravida nisi cras enim quis nibholm varius amet gravida<br> ut facilisis neque egestas.</p>
 </div>
 <div class="Articles-right">
     <div class="top">

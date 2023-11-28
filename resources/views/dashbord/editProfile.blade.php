@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="{{asset('assets_dash/img/apple-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('assets_dash/img/favicon.png')}}">
+  {{-- <link rel="icon" type="image/png" href="{{asset('assets_dash/img/favicon.png')}}"> --}}
   <title>
     Edit Profile 
   </title>
@@ -51,9 +51,14 @@
                   
                   </div>
                   <div class="mb-3">
-                    {{-- <img src="{{asset($profile->Image)}}" alt="" style="width:200px;height:200px;"> --}}
+                    <img src="{{asset($profile->Image)}}" alt="" style="width:200px;height:200px;">
                     <input type="file" class="form-control" placeholder="Image" value="{{$profile->Image}}" aria-label="price"  name="Image">
-                
+                    @error('Image')
+                    <div class="alert alert-danger mt-" role="alert">
+                      {{$message}}
+                    </div>
+                        
+                    @enderror
                   </div>
                   
                   <div class="mb-3">
@@ -61,11 +66,11 @@
                    
               
                   </div>
-                  <div class="mb-3">
+                  {{-- <div class="mb-3">
                     <input type="text" class="form-control" placeholder="password" value="{{ $profile->password }}" aria-label="image" name="password">
                     
                     
-                  </div>
+                  </div> --}}
 
                   <div class="mb-3">
                     <input type="text" class="form-control" placeholder="mobile" value="{{$profile->mobile}}" aria-label="Email" name="mobile">

@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string("Password");
             $table->string("mobile")->nullable();
             $table->string("location");
-            $table->string("role")->default("user");
             $table->timestamps();
         });
     }

@@ -87,8 +87,8 @@
      
 
     <div class="container-fluid">
-      <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('../assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
-        <span class="mask bg-gradient-primary opacity-6">information profile</span>
+      <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('../assets/images/blogpost3.jpg'); background-position-y: 50%;">
+     
       </div>
       <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
         <div class="row gx-4">
@@ -126,7 +126,7 @@
                 <span class="nav-link-text ms-1">Logout</span>
               </a>
               @if(Auth::user() && Auth::user()-> role == "admin") 
-              <a class="nav-link  " href="{{url("/dashboard")}}">
+              <a class="nav-link  " href="{{url("/tables")}}">
                 <span class="nav-link-text ms-1">Dashboard</span>
               </a>
             @endif 
@@ -291,7 +291,7 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
-  <!-- Github buttons -->
+
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>

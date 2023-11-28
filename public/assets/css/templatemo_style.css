@@ -250,81 +250,6 @@ font-size: 20px;
 
 
 
-/*-- Our Team --*/
-
-.team-thumb {
-  position: relative;
-  text-align: center;
-}
-
-.team-thumb .author img {
-  width: 100%;
-}
-
-.team-thumb .overlay {
-  background-color: rgba(0,0,0, 0.7);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.team-thumb:hover .overlay {
- visibility: visible;
- opacity: 1;
- cursor: pointer;
-}
-
-.author-caption ul {
-  padding: 0;
-  margin: 0;
-}
-
-.author-caption li {
-  list-style: none;
-  display: inline-block;
-  margin-top: 40%;
-}
-
-.author-caption a {
-  display: inline-block;
-  background-color: rgba(250,250,250, 0.4);
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
-  color: #fff;
-}
-
-.author-caption a:hover {
-  background-color: #f78e21;
-  color: #fff;
-}
-
-.author-details {
-  margin-top: 15px;
-  text-align: center;
-}
-
-.author-details h2 {
-  display: block;
-  margin-bottom: 0px;
-  font-size: 16px;
-  font-weight: 700;
-  color: #333;
-  text-transform: uppercase;
-}
-
-.author-details span {
-  color: #f78e21;
-  text-transform: uppercase;
-}
-
-/*-- End Our Team --*/
-
-
 
 
 
@@ -384,6 +309,7 @@ right: 10vh;
   border-top-right-radius: 20px;
 border-top-left-radius:20px ;
 }
+
 #crad img{
 border-top-right-radius: 20px;
 border-top-left-radius:20px ;
@@ -659,13 +585,22 @@ textarea {
 .recent-post {
   overflow: hidden;
   margin-bottom: 20px;
+  position:relative; 
+  left:5vh;
 }
 
 .recent-post-thumb {
   float: left;
   margin-right: 20px !important; 
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 80px;
+  
+}
+.recent-post-thumb img{
+width: 70px;
+height: 70px;
+border-radius: 5px;
+ 
 }
 
 .recent-post-info {
@@ -831,57 +766,6 @@ background-color:rgb(194, 198, 202) ;
 /*-- End Services --*/
 
 
-
-
-
-/*-- Latest Posts --*/
-
-.blog-post {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.blog-thumb {
-  overflow: hidden;
-  position: relative;
-}
-
-.blog-thumb img {
-  width: 100%;
-}
-
-.blog-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0,0,0,0.7);
-  color: #fff;
-  padding: 15px;
-}
-
-.content-show a {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.content-show span {
-  color: #f78e21;
-}
-
-.content-hide {
-  margin-top: 15px;
-  display: none;
-}
-
-.content-hide p {
-  color: #fff;
-}
-
-/*-- End Latest Posts --*/
 
 
 
@@ -1101,15 +985,16 @@ right: 4vh;
     border-radius: 50%;
     position: relative;
     left: 2vh;
+    bottom: 3vh;
  }
  .customers .customer-one .con-im h4,.p{
   position: relative;
   left: 14vh;
-  bottom: 8vh;
+bottom: 60px;
  }
  .customers .customer-one .con-im .p{
   position: relative;
-  bottom: 9vh;
+  bottom: 20vh;
  }
 
  .customers #customer-three{
@@ -1210,7 +1095,7 @@ background-color: rgb(255, 255, 255);
 
   /* end section-seven */
 
-  /* section one */
+  /* section one-about */
   /* about */
 
   .oneontainer{
@@ -1356,7 +1241,81 @@ video {
 
 
 
+/* section four  */
+.section-four-about{
+height:600px ;
+background-color: #F9F9F7;
+}
+.section-four-about .img-about img{
+  width: 400px;
+  height: 440px;
+  float: right;
+  position: relative;
+  top: 10vh;
+  right: 25vh;
+}
+.up-abput-left .h2-about ,.p-about{
+  position: relative;
+  left: 20vh;
+  top:8vh;
+} 
+.up-abput-left  .h2-about {
+position: relative;
+left: 25vh;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+.up-abput-left  .top-about{
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  font-style: italic;
+  left: 50vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  top: 10vh;
+  display: flex;
+}
+.up-abput-left  .bottom-about{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  left: 50vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  font-style: italic;
+  top: 20vh;
+  display: flex;
+}
+.left-about{
+  position: relative;
+  right: 28vh;
+  width: 100px;
+
+  height: 100px;
+  background-color: white;
+}
+.right-about{
+  position: relative; right:10vh;
+}
+.ten-about{
+  position: relative; right:10vh;
+}
+.left-about .three-about{
+  text-align: center;
+}
+.left-about .three-about{
+  text-align: center;
+}
+.left-about .three-about{
+  text-align: center;
+}
+.left-about .three-about{
+  text-align: center;
+}
+
+/* end section four */
 
 
 
@@ -1364,13 +1323,13 @@ video {
 
 
   /* section five  */
-  .section-five{
+  .section-five-about{
     position: relative;
     bottom:0;
    }
-   .section-five #h2{
+   .section-five-about #h2{
     position: relative;
-    bottom: 10vh;
+    bottom: 2vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
    }
@@ -1416,23 +1375,56 @@ video {
    .customers #customer-two{
     margin-left: 13vh;
     } 
-    .section-five h2{
+    .section-five-about h2{
       text-align: center;
     }
   /* end section five */
+
+
+  /* Blog */
+  /* sectoion one */
+  .Our-Blog{
+    text-align: center;
+  }
+  .Our-Blog h1{
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  #crad-blog{
+    border-top-right-radius: 20px;
+  border-top-left-radius:20px ;
+  
+  
+  }
+  #crad-blog img{
+    border-top-right-radius: 20px;
+  border-top-left-radius:20px ;
+  height: 180px;
+  }
+  #crad-blog .blog-p{
+   margin-right: 6px;
+  }
+  
 /*--Footer--*/
 
 footer {
-  background-color: #000000;
-  border-top: 4px solid #f78e21;
+  background-color: #474747;
+
   margin: 0;
   padding-bottom: 0;
 
 }
 
 .social-bottom {
-  margin-top: 40px;
+ 
+  float: left;
   padding-bottom: 40px;
+  padding-left: 20px;
+  position: relative;
+  top:50vh ;
+  right: 140vh;
+  
 }
 
 .social-bottom span {
@@ -1448,6 +1440,7 @@ footer {
 .social-bottom ul {
   margin: 0;
   padding: 0;
+  
 }
 
 .social-bottom li {
@@ -1463,10 +1456,12 @@ footer {
   line-height: 36px;
   text-align: center;
   color: #bbb;
+  border-radius: 30px;
+  background-color: #f72168;
 }
 
 .social-bottom a:hover {
-  background-color: #f78e21;
+  background-color: #f72153;
   color: #fff;
 }
 
@@ -1496,7 +1491,7 @@ footer {
   top: 0;
   width: 34px;
   height: 34px;
-  background: url(../images/subscribe-icon.png);
+  
   background-repeat: no-repeat;
   background-position: center;
   color: transparent;
@@ -1523,12 +1518,17 @@ footer {
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
+  position: relative;
+  right: 4vh;
+  bottom: 15vh;
   padding-bottom: 20px;
 }
 
 .shop-list ul {
   margin: 0;
   padding: 0;
+  position: relative;
+  bottom: 10vh;
 }
 
 .shop-list li {
@@ -1539,7 +1539,7 @@ footer {
 .shop-list i {
   font-size: 16px;
   margin-right: 5px;
-  color: #f78e21;
+  color: #ffffff;
 }
 
 .shop-list a {
@@ -1699,12 +1699,28 @@ footer {
 }
 
 @media screen and (max-width: 568px) {
-
+/* home */
   .home-account {
     text-align: center;
     display: block;
   }
- 
+  .slider-caption #h1-home{
+  
+    font-size: 50px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: #020202;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+  }
+  #services #h2-home{
+    position: relative;
+    left: 85px;
+  }
+  #services{
+    position: relative;
+    right: 100px;
+  }
   .cart-info {
     text-align: center;
     display: block;
@@ -1733,6 +1749,396 @@ footer {
     padding: 6vh 0vh;
     border-radius: 30px;
   }
+.ccontainer img{
+ width: 200px;
+ height: 200px;
+ margin-right: 60px;
+
+}
+.ccontainer .relative-item{
+  width: 150px;
+ height: 150px;
+
+position: relative;
+top: 30px;
+}
+ .ccontainer .relative-item i a{
+  font-size: 10px;
+} 
+.right-section{
+  position: relative;
+  top: 2vh;
+  left: 5vh;
+}
+#section-top{
+  position: relative;
+  bottom: 4vh;
+  right: 15vh;
+}
+.ccontainer .relative-item .right-section .h2-res{
+  position: relative;
+  top: 30vh;
+  left: 10px;
+}
+
+.section-four h3{
+margin-top: 200px;
+position: relative;
+}
+
+.section-five{
+  position: relative;
+  bottom: 80vh;
+  width: 100%;
+  background-color: #F9F9F7;
+  height: 600px;
+ 
+}
+.section-five h2{
+  font-size: 50px;
+}
+.section-five h2 p{
+  font-size: 40px;
+
+
+}
+
+
+.section-five .img-one-left img{
+ position: relative; 
+ left: 100px;
+ width: 110px;
+ 
+
+}
+.section-five .img-two-left img{
+  position: relative; 
+  left:215px;
+  width: 20px;
+  height: 20px;
+ 
+  
+  
+}
+
+
+.section-five .right-div{
+
+  position: relative;
+  bottom: 40vh;
+ right: 5vh;
+  
+}
+.section-six{
+  position: relative;
+  right: 10vh;
+}
+.section-six .h2-res{
+  position: relative;
+  left: 10vh;
+}
+.section-six #customer-two{
+  position: relative;
+left: 100px;
+}
+.section-six #customer-three{
+position: relative;
+left: 100px;
+}
+ 
+
+
+
+
+
+
+
+.section-seven{
+  position: relative;
+
+width: 50%;
+background-color: #F9F9F7;
+height: 900px;
+}
+.section-seven .blog{
+display:flex ;
+justify-content: space-between;
+position: relative;
+left: 26vh;
+}
+.section-seven .blog .btn-blog{
+border-radius: 30px;
+background-color: #AD343E;
+border: 1px solid black;
+margin-top: 2vh;
+
+}
+.section-seven .blog .btn-blog a{
+color:white;
+
+}
+.section-seven .blog h5{
+font-size: 20px;
+}
+.section-seven .Articles img{
+width: 200px;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+}
+.section-seven .Articles {
+width: 200px;
+background-color: rgb(255, 255, 255);
+position: relative;
+top: 30vh;
+left: 4vh;
+padding-bottom: 3vh;
+}
+.section-seven .Articles h6,.p-img{
+margin-left: 4vh;
+width: 200px;
+}
+.section-seven .Articles p{
+margin-top: 2vh;
+}
+
+.section-seven .Articles-right .row{
+display: inline-block;
+position:relative ;
+left: 40vh;
+bottom: 70vh;
+
+
+
+}
+.section-seven .Articles-right .top .row{
+padding-left:8vh;
+margin-bottom: 5vh;
+
+
+
+
+}
+.section-seven .Articles-right .top img{
+border-top-right-radius: 20px;
+
+border-top-left-radius: 20px;
+width: 200px;
+}
+
+
+.section-seven .Articles-right .bottom .row{
+padding-left:8vh;
+
+
+
+}
+.section-seven .Articles-right .bottom img{
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+width: 180px;
+
+}
+
+ /* section one-about */
+  /* about */
+
+  .oneontainer{
+    position: relative;
+    width: 100%;
+    background-color: #F9F9F7;
+    height: 450px;
+  }
+  .oneontainer img{
+    width: 30vh;
+    height:30vh;
+    border-radius: 20px;
+    position: relative;
+    left: 10vh;
+    top: 2vh;
+  }
+  .oneontainer .relative-item{
+    background-color: #474747;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    display: inline-block;
+    
+    position: relative;
+    left: 3px;
+ 
+    top: 18vh;
+    
+  }
+  .oneontainer .relative-item i, h3{
+    position: relative;
+    left: 2vh;
+    font-size: 5px;
+    padding-top: 2vh;
+  
+    bottom: 3vh;
+  }
+  .oneontainer .relative-item i a{
+    padding-left: 1vh;
+    color: white;
+  }
+  .oneontainer .relative-item  h5{
+    position: relative;
+    left: 2vh;
+    padding-top: 3vh;
+    bottom: 2vh;
+    font-size: 5px;
+  
+  }
+  
+  .oneontainer .right-section{
+   
+    position: relative;
+    bottom: 45vh;
+    left: 15px;
+
+    
+  }
+  .oneontainer .right-section p{
+    position: relative;
+    right: 23vh;
+    font-size: 8px;
+  }
+  .oneontainer .right-section h2,h6{
+    padding-top: 3vh;
+    position: relative;
+    right: 110px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }
+  .oneontainer .right-section button{
+    border-radius: 30px;
+    margin-top: 2vh;
+   position: relative;
+   right: 20vh;
+    padding: 1vh 2vh;
+    border: 1px black solid;
+   
+  
+  }
+  .oneontainer .right-section button:hover{
+    background-color: #d2d2d2;
+  }
+  .oneontainer .right-section button a{
+    color: #000000;
+    font-size: 2vh;
+  
+  }
+  /* end section one */
+
+
+/* video */
+.video-container{
+  position: relative;
+  top: 20px;
+}
+/* end video */
+
+  /* section three */
+  .section {
+    position: relative;
+    left: 19vh;
+    bottom: 10vh;
+    text-align: center;
+    display: inline-block;
+}
+
+.section i {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.h2 {
+    color: #333;
+}
+  /*end  section three */
+
+/* section four  */
+.section-four-about{
+  height:600px ;
+  background-color: #F9F9F7;
+  }
+  .section-four-about .img-about img{
+    width: 400px;
+    height: 200px;
+    float: right;
+    position: relative;
+    top: 10vh;
+    right: 25vh;
+  }
+  .up-abput-left .h2-about ,.p-about{
+    position: relative;
+    left: 20vh;
+    top:8vh;
+  } 
+  .up-abput-left  .h2-about {
+  position: relative;
+  left: 25vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }
+  .up-abput-left  .top-about{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    font-style: italic;
+    left: 50vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 10vh;
+    display: flex;
+  }
+  .up-abput-left  .bottom-about{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    left: 50vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+    font-style: italic;
+    top: 20vh;
+    display: flex;
+  }
+  .left-about{
+    position: relative;
+    right: 28vh;
+    width: 100px;
+  
+    height: 100px;
+    background-color: white;
+  }
+  .right-about{
+    position: relative; right:10vh;
+  }
+  .ten-about{
+    position: relative; right:10vh;
+  }
+  .left-about .three-about{
+    text-align: center;
+  }
+  .left-about .three-about{
+    text-align: center;
+  }
+  .left-about .three-about{
+    text-align: center;
+  }
+  .left-about .three-about{
+    text-align: center;
+  }
+  
+  /* end section four */
+  
+
+
 
   .footer-title {
     margin-top: 60px;
@@ -1786,6 +2192,14 @@ footer {
   position: relative;
   left: 30vh;
   bottom: 8vh;
+  }
+  #submit-nav .bookAtable{
+    position: relative;
+    left: .5vh;
+  }
+  #submit-nav .profilez{
+    position: relative;
+    right: 25vh;
   }
   .uploginregister_buttons{
     position: relative;

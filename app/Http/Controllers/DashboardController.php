@@ -9,38 +9,37 @@ use App\Models\Product;
 use Auth;
 class DashboardController extends Controller
 {
-   function Dashhome(){
-    return view("dashbord.billing");
-   }
+  
+  
+   
+  
+  
 
-   function dashboard(){
-    return view("dashbord.dashboard");
-   }
-   function profile(){
-    return view("dashbord.profile");
-   }
-   function rtl(){
-    return view("dashbord.rtl");
-   }
-   function signin(){
-    return view("dashbord.sign-in");
-   } 
-
-   function signup(){
-    return view("dashbord.sign-up");
-   }
+ 
    function item(Product $result){
     $data = $result->get();
       return view("dashbord.items" , ["data" => $data]);
      }
      
-     function create(){
-      return view("dashbord.createItem");
-     }
    function tables(User $data){
+
       $details = $data->get();
      
     return view("dashbord.tables" , ["details" => $details]);
+   }
+   function chart(){
+      $Alluser = User::count();
+      $Allorders = Book::count();
+      $Allitem = Product::count();
+      $Admin = User::where('role', 'admin')->count();
+      $user =User::where('role', 'user')->count();
+      return view("dashbord.HomeDashbord" , [
+         "All_Users" => $Alluser,
+         "All_orders" => $Allorders,
+         "All_item" => $Allitem,
+         "Admin" => $Admin,
+         "user" => $user,
+   ]);
    }
    function deleteUser(User $id){
       $id->delete();
@@ -99,6 +98,24 @@ public function orders()
      
       return redirect("/index");
   }
+
+
+  function request($id){
+   $requestt = Product::findOrFail($id);
+   return view("dashbord.request" ,['requestt'=>$requestt]);
+}
+
+
+function handle_request(Request $request,$id){
+
+
+   $item = Product::findOrFail($id);
+   $item->update($request->all());
+  
+
+  
+   return redirect("/tables");
+}
 
  
 }

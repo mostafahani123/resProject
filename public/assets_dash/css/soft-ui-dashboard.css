@@ -672,7 +672,7 @@ progress {
 .container-lg,
 .container-xl,
 .container-xxl {
-  --bs-gutter-x: 1.5rem;
+ 
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * .5);
@@ -22638,12 +22638,12 @@ html {
   margin: 0 1rem;
 }
 
-.navbar-vertical.navbar-expand-xs .navbar-nav .nav-link .nav-link-text,
+/* .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link .nav-link-text,
 .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link .sidenav-mini-icon,
 .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link .sidenav-normal,
 .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link i {
   pointer-events: none;
-}
+} */
 
 .navbar-vertical.navbar-expand-xs .navbar-nav .nav-item {
   width: 100%;

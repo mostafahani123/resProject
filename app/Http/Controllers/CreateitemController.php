@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Massage;
 class CreateitemController extends Controller
 {
     
@@ -24,13 +25,11 @@ class CreateitemController extends Controller
  
     function handle_edit(Request $request,$id){
 
-        $request->validate([
-            'name' => 'required',
-            'price' => 'required',
-            'descraption' => 'required',
-            'image' => 'required',
+    //      $request->validate([
+       
+    //      'image' => 'required',
             
-           ]);
+    //    ]);
 
 
         $imgHolder = "";
@@ -63,12 +62,6 @@ class CreateitemController extends Controller
 
         return view("dashbord.createItem");
     }
-
-
-
-
-
-
 
 
 
@@ -114,5 +107,40 @@ class CreateitemController extends Controller
 
    
         
+
+    function massage(){
+
+        return view("contact-us");
+    }
+
+
+    function handle_massage(Request $request){
+
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'subject' => 'required',
+            'message' => 'required',
+            
+           ]);
+
+           $add =  Massage::create([
+            'name' => $request->input('name'),
+            'email' =>$request->input('email'),
+            'subject' => $request->input('subject'),
+            'message' => $request->input('message'),
+           
+        ]);
+    
+        session()->flash('msg','!');
+    
+        return redirect("/contact");
+    }
+
+
+    public function showmassagedash(Massage $data){
+          $result = $data->get();
+          return view("dashbord.massagedash" , ['data' => $result]);
+    }
     }
 

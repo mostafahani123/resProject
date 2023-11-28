@@ -593,5 +593,39 @@ License - nucleoapp.com/license/
   content: "\ea65";
 }
 
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  cursor: pointer;
+}
 
+select:hover {
+  border-color: #555;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+/* Style the arrow icon */
+select::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Remove default styles in Firefox */
+select::-ms-expand {
+  display: none;
+}
 /* all icon font classes list here */

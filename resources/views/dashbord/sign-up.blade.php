@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="{{asset('assets_dash/img/apple-icon.png')}}">
   <link rel="icon" type="image/png" href="{{asset('assets_dash/img/favicon.png')}}">
   <title>
-    Soft UI Dashboard by Creative Tim
+    Register
   </title>
 
   <!--     Fonts and icons     -->
@@ -30,13 +30,13 @@
   
   <main class="main-content  mt-0">
     <section class="min-vh-100 mb-8">
-      <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../assets/img/curved-images/curved14.jpg');">
+      <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../assets/img/Capture.JPG');">
         <span class="mask bg-gradient-dark opacity-6"></span>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-5 text-center mx-auto">
               <h1 class="text-white mb-2 mt-5">Welcome!</h1>
-              <p class="text-lead text-white">Use these awesome forms to login or create new account in your project for free.</p>
+              <p class="text-lead text-white"> create new account .</p>
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
-  <!-- Github buttons -->
+
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>

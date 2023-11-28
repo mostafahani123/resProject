@@ -31,24 +31,39 @@ use App\Http\Controllers\BookingController;
 
 Route::middleware(['isAdmin'])->group(function(){
 
-// dashboard
-    Route::get('/dashboard', [DashboardController::class , "dashboard"]);
-    Route::get('/billing', [DashboardController::class , "Dashhome"]);
-    Route::get('/rtl', [DashboardController::class , "rtl"]);
+
+
+//  show users 
     Route::get('/tables', [DashboardController::class , "tables"]);
+    // end show users
+    // show all actions users orders items Admin User 
+    Route::get('/Home', [DashboardController::class , "chart"]);
+    // end  show all actions users orders items Admin User
+    // show item 
     Route::get('/item', [DashboardController::class , "item"]);
+    // end show item
+    // show order
     Route::get('/orders', [DashboardController::class , "orders"]);
+// end show order
+    // create item -> menu
     Route::get('/createItem', [CreateitemController::class , "create"]);
     Route::post('/createItem', [CreateitemController::class , "handle_create"]);
+    // end create item -> menu
+    // contact 
+    Route::get('/massage', [CreateitemController::class , "massage"]);
+    Route::post('/massage', [CreateitemController::class , "handle_massage"]);
+    Route::get('/massagedash', [CreateitemController::class , "showmassagedash"]);
+    // end contact
     Route::get('bookings', [BookingController::class, 'index']);
     Route::post('bookings/{booking}/confirm', [BookingController::class, 'confirm']);
    Route::post('bookings/{booking}/reject', [BookingController::class, 'reject']);
+
+//    delete && edit item  &&  user
     Route::get('/delete/{id}', [DashboardController::class , "delete"]);
     Route::get('/deletee/{id}', [DashboardController::class , "deleteUser"]);
     Route::get('/edit/{id}', [CreateitemController::class , 'edit'] );
     Route::put('/edit/{id}', [CreateitemController::class , 'handle_edit']);
-    Route::get('/editProfile/{id}', [DashboardController::class , 'editProfile'] );
-    Route::put('/editProfile/{id}', [DashboardController::class , 'handle_editProfile']);
+// end    delete && edit item  &&  user
     
 });
 
@@ -63,12 +78,27 @@ Route::get('/bookTable', [HomeController::class , "Book"]);
 Route::get('/menu', [CreateitemController::class , "menu"]);
 Route::get('/pages', [HomeController::class , "pages"]);
 Route::get('/about', [HomeController::class , "about"]);
-Route::get('/single-post', [HomeController::class , "singlepost"]);
+// login
 Route::get('/sign-in', [SigninController::class , "signin"]);
 Route::post('/sign-in', [SigninController::class , "handle_signin"]);
+// end login
+// register
 Route::get('/sign-up', [SignupController::class , "signup"]);
-Route::get('/logout', [LogoutController::class , "logout"]);
 Route::post('/sign-up', [SignupController::class , "handle_signup"]);
+// end register
+// logout
+Route::get('/logout', [LogoutController::class , "logout"]);
+// end logout
+// book
 Route::get('/book', [ProfileController::class , "book"])->name('book');
 Route::post('/book', [ProfileController::class , "createBook"])->name('book');
+// end book
+// profile && request
 Route::get('/profile/{id}', [ProfileController::class , "profile"]);
+Route::get('/request/{id}', [DashboardController::class , 'request'] );
+Route::put('/request/{id}', [DashboardController::class , 'handle_request']);
+// edit profile code statment
+Route::get('/editProfile/{id}', [DashboardController::class , 'editProfile'] );
+// end edit profile
+Route::put('/editProfile/{id}', [DashboardController::class , 'handle_editProfile']);
+// end profile && request
